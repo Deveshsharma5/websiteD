@@ -1,18 +1,83 @@
+/* Background and base font */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0e6db, #c7d2cb);
+    font-family: 'Georgia', serif;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    padding: 0 20px;
+    color: #4b4b3f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container {
-    padding: 50px;
-    margin-top: 100px;
-    background-color: white;
+/* Header styling */
+header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #6b584c;
+}
+
+header p {
+    font-style: italic;
+    color: #7d6e63;
+    font-size: 1.2em;
+}
+
+/* Intro paragraph */
+.intro {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #5e5a4a;
+}
+
+/* Features section with flex layout */
+.features {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(107, 88, 76, 0.15);
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h2 {
+    color: #6b584c;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.feature p {
+    color: #7d6e63;
+    line-height: 1.4;
+}
+
+/* Footer styling */
+footer {
+    margin: 60px 0 40px;
+    font-size: 0.9em;
+    color: #6b584c;
+    text-align: center;
 }
